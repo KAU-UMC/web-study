@@ -1,0 +1,26 @@
+/* global */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    /* background-color: #202020; */
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+#navContainer{
+    justify-content: space-between;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    padding : 0px, 20px;
+    border: 0 solid #000;
+}
