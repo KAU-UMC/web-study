@@ -74,7 +74,7 @@ nav{
     border-radius: 50%;
 }
 
-.profile-info .username{
+.profile-info .name{
     font-size: 1.7em;
     color: #545454;
 }
@@ -89,6 +89,15 @@ nav{
     cursor: pointer;
 }
 
+.add-photo{
+    transform: scale(3);
+    position: fixed;
+    bottom: 5em;
+    right: 7em;
+    cursor: pointer;
+}
+
+
 .gallery-nav{
 
     height: 3em;
@@ -97,9 +106,27 @@ nav{
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.7em;
+    column-gap: 1.7em;
+    margin-bottom: 2em;
 }
 
 .item{
-    height: 15em;
-    width: 15em;
+    height: 17.5em;
+    width: 17.5em;
+    background: #000;
+}
+
+.item>img{
+  height: 100%;
+  width: 100%;  
+  object-fit: cover;
+}
+
+.item>img:hover{
+    opacity: 0.5;
+}
+
+#addPhotoInput{
+    display: none;
 }
