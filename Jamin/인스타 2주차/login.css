@@ -1,0 +1,99 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: gray;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transform: translate(50%,50%);
+}
+
+.main-picture {
+    height: 700px;
+    width: 500px;
+}
+
+.login {
+    margin : 5px;
+    border : 1px solid gray;
+    background: white;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instagram-logo {
+    width :max-content;
+    height: 75px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.id, .password {
+    width: 70%;
+    height: 45px;
+    border : 1px solid gray;
+    margin-bottom: 5px;
+    margin : 10px;
+    border-radius: 1px;
+}
+
+
+.login-click {
+    width : 70%;
+    height: 45px;
+    background: blue;
+    border: none;
+    outline : none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    opacity: 0.5;
+    border-radius: 1px;
+}
+
+.or, .facebook, .forget {
+    height: 45px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join {
+    color: blue;
+    font-weight: bold;
+}
+
+.create {
+    height: 100px;
+}
+.download {
+    height: 100px;
+}
+
+
+
+@media (max-width: 1100px){
+    .nav {
+        width :90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        width :90%;
+    }
+}

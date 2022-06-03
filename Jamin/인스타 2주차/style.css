@@ -1,0 +1,383 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: aquamarine;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+}
+
+.nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: yellow;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.nav2 {
+    width: 70%;
+    max-width: 1000px;
+    height: 100%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.searchbox{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 25px;
+    background: green;
+    border : 1px solid blue;
+    border-radius: 5px;
+    color : red;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+}
+
+/* 검색이라는 글자 색깔 */
+.searchbox::placeholder {
+    color: black;
+}
+
+.icon {
+    height: 22px;
+    position: relative; 
+}
+
+.icon1 {
+    height: 100%;
+    cursor : pointer;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.profile1 {
+    width :22px;
+    border : 2px solid black;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.main {
+    width : 100%;
+    padding: 40px 0;
+    display : flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main1 {
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap : 30px;
+}
+
+.left {
+    display : flex;
+    flex-direction: column;
+}
+
+.left1{
+    width: 100%;
+    height: 120px;
+    background: white;
+    border : 1px solid gray;
+    border-radius: 2px;
+    padding: 10px;
+    padding-right: 0;
+    display:  flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.left1::-webkit-scrollbar{
+    display : none;
+}
+
+.circle {
+    flex : 0 0 auto;
+    width : 80px;
+    max-width: 80px;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.profilepic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding : 3px;
+    background:linear-gradient(45deg, yellow, red, blue);
+}
+
+.profilepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white
+}
+
+.name {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: black;
+}
+
+.center {
+    width: 100%;
+    height: auto;
+    background: white;
+    border : 1px solid gray;
+    margin-top: 10px;
+}
+
+
+.writing {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid gray;
+}
+
+.writing .user {
+    width : auto;
+    font-weight: bold;
+    color : black;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.writing .option {
+    height: 10px;
+    cursor: pointer;
+}
+
+.writing .user {
+    display :flex;
+    align-items: center;
+}
+
+
+.writing .image {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background: none;
+}
+
+.writing .user {
+    border : none;
+}
+
+.paper {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    padding :20px;
+}
+
+.like {
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px; 
+}
+
+.description span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.time {
+    color : gray;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.comment {
+    width :100%;
+    height: 50px;
+    border-radius: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment .icon0 {
+    height: 30px;
+}
+
+.comment-box {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.button0, .action {
+    width : 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline : none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: blue;
+    opacity: 0.5;
+}
+
+.reaction {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: -20px;
+    align-items: center;
+}
+
+.reaction .icon99 {
+    height: 25px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.reaction .saveicon99 {
+    margin-left: auto;
+    height: 25px;
+}
+
+.right {
+    padding: 20px;
+}
+
+
+.picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.card .picture {
+    flex : 0 0 auto;
+    padding: 0;
+    border : 1px solid white;
+    background: none;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.picture1 {  
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.card .picture1 {
+    flex : 0 0 auto;
+    padding: 0;
+    border : 1px solid white;
+    background: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.card .name111 {
+    font-weight: bold;
+    font-size: 14px;
+    color :black;
+    width: 100px;
+}
+
+.sub-text {
+    color:black;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    width: 100px;
+}
+
+
+.action {
+    opacity: 1;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.suggestion {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    margin: 20px 0;;
+}
+
+@media (max-width: 1100px){
+    .right, .searchbox {
+        display :none;
+    }
+    .nav2, .main1 {
+        width : 90%;
+    }
+    .main1 {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .icon1, .nav2 {
+        margin: 0 5px;
+    }
+    .post {
+        height: 300px;
+    }
+}
